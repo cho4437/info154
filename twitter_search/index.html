@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Twitter Search</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	
+
+</head>
+<body>
+	<div class="container">
+		<div class="sixteen columns">
+			<center><h1>Twitter Search</cener></h1>
+			<hr/>
+		</div>
+
+		<!-- User Search -->
+		<div class="eight columns">
+			<center><h3>Search User Timeline</center></h3>
+			<br>
+			<form action="controller/controller.php" method="POST">
+  				<center><label for="regularInput">Enter Username</center></label>
+				<center><input type="text" name="screen_name" id="regularInput" value="Username" /></center>
+				<center><input type="submit" name="mode" value="Search User Timeline"></center>
+			</form>
+		</div>
+
+		<!-- Keyword Search -->
+		<div class="eight columns">
+			<center><h3>Search with a Keyword</center></h3>
+			<br>
+			<form action="controller/controller.php" method="POST">
+  				<center><label for="regularInput">Enter a keyword to search on twitter</center></label>
+				<center><input type="text" name="keyword" id="regularInput" value="Keyword or Hashtag" /></center>
+				
+				<center><label for="regularInput">Since</center></label>
+				<center><input type="text" name="since" id="regularInput" value="Date ie: 2014-05-02" /></center>
+				
+				
+				<center><input type="submit" name="mode" value="Search Twitter"></center>
+			</form>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
